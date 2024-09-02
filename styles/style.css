@@ -1,0 +1,266 @@
+.left__side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile__img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile__name {
+    cursor: default;
+    color: #fff;
+    font-size: 1.3em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profile__position {
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.contact {
+    padding-top: 40px;
+}
+
+.contact__item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.contact__text {
+    font-weight: 300;
+}
+
+.contact__link {
+    color: inherit;
+}
+
+.contact__icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 20px;
+    color: #03a9f4;
+}
+
+.social-media {
+    display: flex;
+    margin-block: 15px;
+    gap: 20px;
+}
+
+.education__date, .education__name,
+.education__major {
+    margin-bottom: 5px;
+}
+
+.education__date {
+    color: #03a9f4;
+    font-weight: 600;
+}
+
+.education__name {
+    color: #fff;
+    font-weight: 500;
+}
+
+.education__major {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.language__item {
+    margin-bottom: 15px;
+}
+
+.language__text {
+    color: #fff;
+}
+
+.language__percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+
+.language__percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #03a9f4;
+}
+
+.right__side {
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 30px;
+}
+
+.about__subtitle {
+    width: 100%;
+    color: #333;
+}
+
+.skills__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skills__subtitle {
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.skill__container {
+    background-color: #cecdcd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    max-width: 200px;
+    margin: 5px;
+    max-height: 50px;
+}
+
+.skill__text {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: left;
+    text-wrap: balance;
+    font-size: large;
+}
+
+.experience {
+    margin-block: 30px;
+}
+
+.experience__position {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.experience__title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience__time {
+    color: #a9a9a9;
+}
+
+.experience__text--small {
+    color: #a9a9a9;
+}
+
+.experience__link {
+    color: #fb993b;
+    font-size: 18px;
+    transition: color .4s;
+}
+
+.experience__link:hover {
+    color: #f24e42;
+}
+
+.project__box {
+    margin-bottom: 20px;
+}
+
+.project__title {
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.project__link {
+    display: block;
+    margin-top: 5px;
+    color: #03a9f4;
+}
+
+.project__text--small {
+    display: block;
+    color: #a9a9a9;
+}
+
+.hobbies__menu {
+    display: flex;
+    gap: 25px;
+}
+
+.hobbies__item {
+    list-style: initial;
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: default;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .hobbies__menu {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hobbies__item {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left__side,
+    .right__side {
+        padding: 20px;
+    }
+
+    .title_secondary {
+        font-size: 18px;
+    }
+
+    .experience__title {
+        font-size: 16px;
+    }
+}
